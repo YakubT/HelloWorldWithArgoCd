@@ -1,0 +1,22 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: hello-name
+spec:
+  selector:
+    matchLabels:
+      app: hello-name
+  template:
+    metadata:
+      labels:
+        app: hello-name
+    spec:
+      containers:
+      - name: hello-name
+        image: anatoliiyakubyshyn.azurecr.io/hellonode
+        resources:
+          limits:
+            memory: "128Mi"
+            cpu: "500m"
+        ports:
+        - containerPort: 80
