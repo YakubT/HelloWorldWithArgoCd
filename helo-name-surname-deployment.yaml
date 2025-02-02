@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: hello-name
-        image: anatoliiyakubyshyn.azurecr.io/hellonode
+        image: anatoliiyakubyshyn.azurecr.io/hellonamesurname
         resources:
           limits:
             memory: "128Mi"
