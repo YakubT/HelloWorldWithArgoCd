@@ -1,11 +1,11 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: hello-name-surname
+  name: hello-name
 spec:
   type: LoadBalancer
   selector:
-    app: hello-name-surname
+    app: hello-name
   ports:
   - port: 80
     targetPort: 80
